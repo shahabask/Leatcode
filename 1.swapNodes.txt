@@ -1,0 +1,34 @@
+1.Creating a Linked List Representation:
+We're dealing with a special data structure called a linked list. Think of it like a chain of connected nodes (data elements).
+
+2.Defining a Node for the Linked List:
+We start by defining what each link in the chain (node) should look like.
+Each node contains two parts: a value (some data) and a reference to the next node in the chain (initially set to null).
+
+3.Converting an Array to a Linked List:
+LeetCode often gives us data in the form of arrays, but our code works with linked lists.
+So, we create a helper function called createLinkedList that transforms an array into a linked list.
+
+4.Swapping Pairs of Nodes:
+The main goal of our code is to swap pairs of nodes in the linked list.
+We have a function called swapPairs to do this, but we need to make sure it gets a linked list as input.
+
+5.Performing Node Swaps:
+Inside the swapPairs function, we check if the linked list is empty or has only one node. If it does, we don't need to do anything, and we return it as is.
+
+6.Swapping Data Values:
+For pairs of nodes, we exchange their values. It's like swapping the contents of two boxes.
+
+7.Recursion for More Pairs:
+If there are more than two nodes in the list, we use a technique called recursion to continue swapping pairs.
+This means we call the swapPairs function again but with a different part of the list, effectively working our way through the entire chain.
+
+8.Converting Linked List Back to an Array:
+After all the swaps are done, we have a linked list. But we need to convert it back into an array for LeetCode to understand our answer.
+We have another helper function called linkedListToArray that helps us with this.
+
+9.Putting It All Together:
+Finally, we create an array (your input data) and transform it into a linked list.
+We then apply our swapPairs function to swap pairs of nodes.
+After swapping is complete, we convert the linked list back into an array to get the answer.
+You can now show your friends that this code takes an array, swaps pairs of numbers as if they were in boxes, and gives back the final result in the form of an array.
